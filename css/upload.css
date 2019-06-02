@@ -1,0 +1,176 @@
+body {
+  background-image: url("../imgs/upload_back.jpg");
+  background-repeat: no-repeat;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.home h1{
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-family: Gotham_Bold;
+  color: white;
+  font-size: 6vh;
+  margin-top: 2vh;
+  padding-top: 15vh;
+}
+
+.dropzone {
+  position: absolute;
+  height: 12vh;
+  width: 10vw;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  background: rgba(0,0,0,0.2);
+  color: white;
+  padding: 3vh 3vh;
+  margin-left: 50vh;
+  font-family: Gotham_Bold;
+}
+
+.name h2 {
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
+  font-family: Gotham_Bold;
+  padding-top: 20vh;
+  position: relative;
+}
+
+.adress h2 {
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
+  font-family: Gotham_Bold;
+  padding-top: 20vh;
+  position: relative;
+}
+
+.country h2 {
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
+  font-family: Gotham_Bold;
+  padding-top: 20vh;
+  position: relative;
+}
+
+.add_infos h2 {
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
+  font-family: Gotham_Bold;
+  padding-top: 20vh;
+  position: relative;
+}
+
+.submit h2 {
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  color: white;
+  font-family: Gotham_Bold;
+  padding-top: 20vh;
+  position: relative;
+}
+
+input[type=text] {
+  position: absolute;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 23vh 50vh;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 2vh;
+  font-family: Gotham_Bold;
+  border-style: none;
+}
+
+input[type=file] {
+  position: absolute;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 15vh 80vh;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 2vh;
+  font-family: Gotham_Bold;
+  border-style: none;
+}
+
+.add_infos textarea {
+  resize: none;
+  position: absolute;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 23vh 50vh;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 2vh;
+  font-family: Gotham_Bold;
+   border: none;
+}
+
+.submit input {
+  position: absolute;
+  width: 40%;
+  padding: 12px 20px;
+  margin: 23vh 50vh;
+  display: inline-block;
+  border-radius: 6px;
+  font-size: 2vh;
+  font-family: Gotham_Bold;
+  transition: 0.5s;
+  border-style: none;
+}
+
+.submit input:hover {
+  color: red;
+  transform: scale(1.1);
+}
+
+.autocomplete-items {
+  position: absolute;
+  border-radius: 6px;
+  border-style: none;
+  font-family: Gotham_Bold;
+  height: 2% !important;
+  z-index: 99;
+  width: 42%;
+  padding: 12px 1px;
+  margin: 26vh 50vh;
+  display: inline-block;
+  font-size: 2vh;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  transition: 0.4s;
+}
+
+.autocomplete-items div:hover {
+  background-color: #fb275f !important;
+  color: #ffffff;
+}
+
+.autocomplete-active {
+  background-color: #fb275f !important;
+  color: #ffffff;
+}
+
+.file-upload + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.file-upload + label,
+.file-upload + label:hover {
+    background-color: red;
+}

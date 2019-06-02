@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WESTHILLS</title>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="../script/place.js"></script>
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="stylesheet" href="../css/place.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="shortcut icon" href="../favico.png">
+  </head>
+  <body>
+
+    <!--  MENU  -->
+    <nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+    <ul id="menu">
+      <a href="../index.html"><li>Home</li></a>
+      <a href="explore.html"><li>Explore</li></a>
+      <a href="upload.html"><li>Upload</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+      <a href="login.html"><li>Log in</li></a>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- USER HEADER -->
+
+    <div class="user_header">
+      <img src="../imgs/icons/user_icon.png" alt="">
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()" id="acc_button">
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="login.html" onclick="logout()" id="dropdown_logout"></a>
+      </div>
+      </div>
+    </div>
+
+      <h2 id="header">westhills.</h2>
+
+    <div class="main">
+
+      <h2 id="place_name"></h2>
+
+      <h3 id="place_adress">adress</h3>
+
+      <img class="place_img" id="place_img" src="">
+
+      <h4 id="placeCountry"></h4>
+
+      <p id="place_description" style="width: 20vw;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec augue ex, pretium ac purus id, tincidunt rhoncus mi. Phasellus rutrum enim id felis imperdiet sodales. Phasellus at dui id elit iaculis condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque pulvinar, eros in pulvinar pretium, est dolor tempus velit, non rhoncus sapien ipsum ac tortor. In accumsan risus vel suscipit placerat.  In accumsan risus vel suscipit placerat. In accumsan risus vel suscipit jgnfkd.</p>
+
+      <h5 id="user_uploaded">user</h5>
+
+    </div>
+
+    <div class="controll_buttons">
+      <a href="explore.html" id="main_page_button"><button id="main_button">MAIN PAGE</button></a>
+    </div>
+
+
+  </body>
+</html>

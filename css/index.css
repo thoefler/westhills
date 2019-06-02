@@ -1,0 +1,101 @@
+body {
+  background-image: url("../imgs/main_back.jpg");
+}
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+
+.snap h1 {
+  text-align: center;
+  margin-top: 0px;
+  padding-top: 50vh;
+  color: white;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.home h2 {
+  font-family: Gotham_Bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  font-size: 3vh;
+  position: relative;
+  margin-top: -5vh;
+}
+
+.home ul{
+  padding-left: 12vw;
+  padding-top: 20vh;
+  font-family: Axis;
+  color: white;
+  list-style: none;
+  font-size: 10vh;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+.home button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 2vh;
+  margin-left: 50vw;
+  color: white;
+  font-family: Gotham_Bold;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  text-align: center;
+  transition: 0.5s;
+}
+
+.home button:hover {
+  transform: scale(1.05);
+}
+
+button:active, button:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none;
+}
+
+.info {
+  padding-left: 50vw;
+  height: 90vh;
+  width: 20vw;
+  position: relative;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  padding-top: 2vh;
+  color: white;
+  font-family: Helvetica;
+  font-weight: bold;
+}
+
+.explain1 h2 {
+  font-size: 10vh;
+}
+
+.explain1 p {
+  font-size: 3vh;
+}
+
+.explain1 img {
+  position: absolute;
+  padding-top: 13.3vh;
+  padding-left: 20vw;
+  height: 70vh;
+  width: 30vw;
+  transform: scale(1.4);
+}
+
+.explain1 button {
+  background-color: rgba(0,0,0,0);
+  border: none;
+  font-size: 2vh;
+  text-decoration: none;
+  color: white !important;
+  font-family: Gotham_Bold;
+  text-decoration: underline;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  transition: 0.5s;
+}

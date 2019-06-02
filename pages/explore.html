@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WESTHILLS</title>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="../script/explore.js"></script>
+
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="shortcut icon" href="../favico.png">
+    <script src="../script/jquery.js"></script>
+    <link rel="stylesheet" href="../css/explore.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <script src="../script/user.js"></script>
+
+  </head>
+  <body>
+
+    <nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+    <ul id="menu">
+      <a href="../index.html"><li>Home</li></a>
+      <a href="explore.html"><li>Explore</li></a>
+      <a href="upload.html"><li>Upload</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+      <a href="login.html"><li>Log in</li></a>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- USER HEADER -->
+
+    <div class="user_header">
+      <img src="../imgs/icons/user_icon.png" alt="">
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()" id="acc_button">
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="#" onclick="logout()" id="dropdown_logout"></a>
+      </div>
+      </div>
+    </div>
+
+    <section class="home" id="home">
+      <div class="home">
+
+        <h2>westhills.</h2>
+
+        <h1>FIND A PLACE</h1>
+
+        <div class="places" id="places">
+
+          <!--  PLACES LIST IS HERE -->
+
+
+        </div>
+
+
+    </section>
+
+
+
+    <script src="../script/jquery.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WESTHILLS</title>
+
+    <link rel="stylesheet" href="../css/menu.css">
+    <script src="../script/jquery.js"></script>
+    <script src="../script/jquery.scrollify.js"></script>
+    <link rel="shortcut icon" href="../favico.png">
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/upload.css">
+    <script src="../script/user.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfXwoUaG0IKsDjse0ugVzShoZPx_yeUak&callback=initAutocomplete&libraries=places"async defer></script>
+    <script src="../script/jquery.js"></script>
+    <script src="../script/jquery.scrollify.js"></script>
+    <script src="../script/upload.js"></script>
+    <script src="../script/transfer.js"></script>
+
+
+  </head>
+  <body style="background-position: 50% 0px;">
+
+    <nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+    <ul id="menu">
+      <a href="../index.html"><li>Home</li></a>
+      <a href="explore.html"><li>Explore</li></a>
+      <a href="upload.html"><li>Upload</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+      <a href="login.html"><li>Log in</li></a>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- USER HEADER -->
+
+    <div class="user_header">
+      <img src="../imgs/icons/user_icon.png" alt="">
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()" id="acc_button">
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="login.html" onclick="logout()" id="dropdown_logout"></a>
+      </div>
+      </div>
+    </div>
+
+
+    <h2 id="head_name">westhills.</h2>
+
+
+
+
+    <section class="snap home" id="home">
+      <div class="home">
+
+        <h1>UPLOAD A PLACE</h1>
+
+        <input type="file" id="file-upload" accept="image/x-png,image/gif,image/jpeg"/>
+
+
+      </div>
+    </section>
+
+
+    <section class="snap name" id="name">
+      <div class="name">
+
+        <h2>Time to add a name</h2>
+
+          <input type="text" name="place_name" value="" placeholder="Place name" id="placeName" maxlength="20">
+
+
+
+      </div>
+    </section>
+
+
+
+    <section class="snap country" id="country">
+
+      <h2>Which country is this in?</h2>
+
+
+          <div class="autocomplete" style="width:300px;">
+              <input id="placeCountry" type="text" name="myCountry" placeholder="Country">
+          </div>
+
+    </section>
+
+
+
+    <section class="snap adress" id="adress">
+
+      <h2>Add the Adress</h2>
+
+      <input id="searchField" class="controls" type="text" placeholder="Adress">
+      <div id="map"></div>
+
+    </section>
+
+    <section class="snap add_infos" id="add_infos">
+
+        <h2>Finally, add some additional infos.</h2>
+
+        <textarea name="comment" form="usrform" placeholder="Add additional infos here" id="placeInfos" maxlength="525"></textarea>
+
+
+
+    </section>
+
+    <section class="snap submit" id="submit">
+
+      <h2>If you filled everything out you can now submit your place.</h2>
+
+        <input type="button" name="submit" value="SUBMIT" onclick="submitPlace()">
+
+      </form>
+
+    </section>
+
+    <script type="text/javascript">
+
+    var input = document.getElementById( 'file-upload' );
+    var infoArea = document.getElementById( 'file-upload-filename' );
+
+    input.addEventListener( 'change', getFileName );
+
+    </script>
+
+
+
+
+  </body>
+</html>

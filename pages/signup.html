@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WESTHILLS</title>
+    <link rel="stylesheet" href="../css/generic.css">
+    <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/login_and_signup.css">
+    <link rel="shortcut icon" href="../favico.png">
+    <script src="../script/user.js"></script>
+    <link rel="stylesheet" href="../css/signup.css">
+  </head>
+  <body>
+
+    <!--  MENU  -->
+    <nav role="navigation">
+    <div id="menuToggle">
+    <input type="checkbox" />
+
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+
+    <ul id="menu">
+      <a href="../index.html"><li>Home</li></a>
+      <a href="explore.html"><li>Explore</li></a>
+      <a href="upload.html"><li>Upload</li></a>
+      <a href="contact.html"><li>Contact</li></a>
+      <a href="login.html"><li>Log in</li></a>
+    </ul>
+    </div>
+    </nav>
+
+    <!-- USER HEADER -->
+
+    <div class="user_header">
+      <img src="../imgs/icons/user_icon.png" alt="">
+      <div class="dropdown">
+          <button class="dropbtn" onclick="myFunction()" id="acc_button">
+          <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content" id="myDropdown">
+          <a href="#" onclick="logout()" id="dropdown_logout"></a>
+      </div>
+      </div>
+    </div>
+
+    <h2 id="head_name">westhills.</h2>
+
+
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+
+
+      <h1>SIGN UP</h1>
+
+      <div class="login" id="login_div">
+        <input type="text" placeholder="Username" id="username_field">
+        <input type="email" placeholder="E-Mail" id="email_field" />
+        <input type="password" placeholder="Password" id="password_field" />
+        <button onclick="signup()" id="login_button">SIGN UP</button>
+        <p>Already have an account? <a href="login.html">Log In!</a></p>
+      </div>
+
+      <div class="loggedin-div" id="user_div">
+        <h2>ALREADY LOGGED IN</h2>
+        <button onclick="logout()">Logout</button>
+        <p onclick="anotherOne()" id="anotherOne">Create another Account</p>
+      </div>
+
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyB4AKWZTXb99QshBFOyd3t2TC1yjYo3JRc",
+        authDomain: "westhills-201012.firebaseapp.com",
+        databaseURL: "https://westhills-201012.firebaseio.com",
+        projectId: "westhills-201012",
+        storageBucket: "westhills-201012.appspot.com",
+        messagingSenderId: "491380765949",
+        appId: "1:491380765949:web:89846b496bc940bf"
+      }
+      firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="../script/signup.js"></script>
+
+  </body>
+</html>

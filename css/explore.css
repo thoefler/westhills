@@ -1,0 +1,86 @@
+body {
+  background-image: url("../imgs/explore_back.jpg");
+  overflow-y: visible;
+}
+
+section {
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.home h2 {
+  font-family: Gotham_Bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 3vh;
+  position: relative;
+    margin-top: -5vh;
+}
+
+.home h1{
+  padding-left: 12vw;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-family: Gotham_Bold;
+  color: white;
+  font-size: 6vh;
+  margin-top: 10vh;
+}
+
+.places {
+    padding-left: 0px;
+    float: none;
+    display: table;
+    margin: 0px auto;
+    list-style: none;
+    font-family: helvetica;
+    width: 70%;
+}
+
+.places img {
+    width: 11.5vh;
+    height: 11.5vh;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.places img {
+    width: 11.5vh;
+    height: 11.5vh;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+.placeCountryClass {
+  color: red;
+}
+
+.places li {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0px 10px 40px rgba(34, 34, 34, 0.48);
+    transition: all 1s;
+    font-family: Gotham_Bold;
+    border-radius: 6px;
+    height: 15vh;
+}
+
+.places li:hover {
+    transform: scale(1.01);
+    background-color: #e5fffc:
+}
+
+.places h3 {
+  margin-top: -0.2vh;
+
+}
+
+h5 {
+  color: rgba(0, 0, 0, 0.0);
+}

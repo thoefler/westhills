@@ -1,0 +1,32 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-size:cover;
+  background-position: 0% 0;
+  transition: 0s linear;
+  transition-property: background-position;
+  overflow:hidden;
+  /* cursor: url('../imgs/cursor.png') -4 12, auto; */
+}
+
+@font-face {
+  font-family: Axis;
+  src: url("../fonts/axis.otf");
+}
+
+@font-face {
+  font-family: Gotham_Bold;
+  src: url("../fonts/Gotham_Bold.otf");
+}
+
+#head_name {
+  font-family: Gotham_Bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+  font-size: 3vh;
+  position: fixed;
+  margin-top: -4vh;
+  margin-left: 47vw;
+  z-index: 264;
+}

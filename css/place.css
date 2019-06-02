@@ -1,0 +1,109 @@
+body {
+  background-image: url("../imgs/explore_back.jpg");
+}
+
+#header {
+  font-family: Gotham_Bold;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+  font-size: 3vh;
+  position: relative;
+  margin-top: -5vh;
+}
+
+.main {
+  margin-left: 25vw;
+  margin-top: 7vh;
+  background-color: rgba(255,255,255,0.3);
+  height: 65vh;
+  width: 50vw;
+  border-radius: 20px;
+}
+
+.main h2 {
+  color: white;
+  font-family: Gotham_Bold;
+  text-align: center;
+  font-size: 4vh;
+  padding-top: 5%;
+}
+
+
+
+.place_img {
+  height: 45vh;
+  width: 17vw;
+  margin-left: 5vw;
+  border-radius: 10px;
+}
+
+.controll_buttons {
+  padding-top: 5vh;
+  padding-left: 45vw;
+}
+
+.controll_buttons button {
+  margin-left: 1vw;
+  width: 10vw;
+  height: 5vh;
+  border-radius: 30px;
+  border-style: none;
+  font-family: Gotham_Bold;
+  transition: 0.3s;
+}
+
+#main_button {
+  background-color: #fb275f;
+  color: white;
+}
+
+.controll_buttons button:hover {
+  transform: scale(1.1);
+}
+
+#main_page_button {
+  text-decoration: none;
+  color: white;
+}
+
+#place_description {
+  box-sizing: border-box !important;
+  display: block !important;
+  color: white;
+  font-family: Arial;
+  margin-top: -35vh;
+  margin-left: 25vw;
+  margin-right: 5vw;
+  position: relative;
+  max-height: 0px;
+  text-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+#placeCountry {
+  transform: scale(1.5);
+  font-family: Gotham_Bold;
+  color: #fb275f;
+  margin-top: -43vh;
+  margin-left: 27.4vw;
+  margin-right: 5vw;
+  position: absolute;
+}
+
+#place_adress {
+  font-family: Gotham_Bold;
+  color: #fb275f;
+  margin-top: 5vh;
+  margin-left: 25vw;
+  margin-right: 5vw;
+  position: absolute;
+  width: 25vw;
+}
+
+#user_uploaded {
+  font-family: Gotham_Bold;
+  color: #fb275f;
+  margin-top: 35vh;
+  margin-left: 25vw;
+  margin-right: 5vw;
+}

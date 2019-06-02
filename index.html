@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>WESTHILLS</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <script src="script/index.js"></script>
+    <script src="script/jquery.js"></script>
+    <script src="script/jquery.scrollify.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="shortcut icon" href="favico.png">
+    <link rel="stylesheet" href="css/generic.css">
+    <link rel="stylesheet" href="css/user.css">
+    <script src="script/user.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase-database.js"></script>
+    <script src="script/index.js"></script>
+  </head>
+  <body style="background-position: 50% 0px;">
+
+
+      <nav role="navigation">
+      <div id="menuToggle">
+      <input type="checkbox" />
+
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+
+      <ul id="menu">
+        <a href="#"><li>Home</li></a>
+        <a href="pages/explore.html"><li>Explore</li></a>
+        <a href="pages/upload.html"><li>Upload</li></a>
+        <a href="pages/contact.html"><li>Contact</li></a>
+        <a href="pages/login.html"><li>Log in</li></a>
+      </ul>
+      </div>
+      </nav>
+
+      <!-- USER HEADER -->
+
+      <div class="user_header">
+        <img src="imgs/icons/user_icon.png" alt="">
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()" id="acc_button">
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+            <a href="#" onclick="logout()" id="dropdown_logout"></a>
+        </div>
+        </div>
+      </div>
+
+    <section class="snap home" >
+      <div class="home">
+
+        <h2>westhills.</h2>
+
+        <ul>
+          <li>FIND PLACES,</li>
+          <li>GO PLACES</li>
+        </ul>
+
+
+      </div>
+    </section>
+
+
+    <section class="snap explain1">
+      <div class="explain1">
+
+
+        <img src="imgs/explain1.jpg" alt="" name="explain1_img">
+
+        <div class="info">
+          <h2>westhills.</h2>
+
+          <p>Finding the best photospots wherever you are or plan to go - The easy way.</p>
+
+          <p>Get to know the area you live in or a new one - from great spots maybe only a few have seen so far. Every spot uploaded individually.</p>
+
+          <button type="button"><a href="pages/upload.html" style="color:#fb275f">upload</a></button>
+        </div>
+
+
+      </div>
+    </section>
+
+    <section class="snap explain2">
+
+      <a href="pages/explore.html" style="text-decoration: none;"><h1>START EXPLORING</h1></a>
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
